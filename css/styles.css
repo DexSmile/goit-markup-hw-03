@@ -23,15 +23,18 @@ ul {
 img {
     display: block;
 }
+button {
+    cursor: pointer;
+}
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--accent-color);
 }
 .container {
-    width: 1470px;
+    width: 1188px;
     margin: 0 auto;
-    outline: 1px solid red;
     padding: 0 15px;
+    outline: 1px solid red;
 }
 .list {
     list-style-type: none;
@@ -57,18 +60,26 @@ body {
 /*-----------------Header--------------------*/
 
 .header {
-    padding: 24px 156px;
+    
+}
+.page-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .header-navigation {
+    display: flex;
+    align-items: center;
 
 }
-.logo {
+.logo:not(span) {
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
     line-height: 1.3;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 .logo-color-grey {
     color: var(--secondary-title-color);
@@ -83,10 +94,11 @@ body {
     color: var(--secondary-title-color)
 }
 .header-list {
-
+    display: flex;  
+    align-items: center;
 }
-.header-item {
-
+.header-item:not(:last-child) {
+    margin: 40px;
 }
 .header-link {
     font-weight: 500;
@@ -104,13 +116,14 @@ body {
     text-decoration: underline;
 }
 .header-address {
-font-style: normal;
+    font-style: normal;
 }
 .header-mail {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+    margin-right: 40px;
 }
 .header-mail:hover {
     color: var(--hover-color);
@@ -143,7 +156,6 @@ font-style: normal;
     letter-spacing: 0.02em;
     color: var(--main-title-color);
     margin-bottom: 48px;
-    padding: 188px 473px 292px;
 }
 .hero-btn {
     font-family: inherit;
@@ -152,7 +164,6 @@ font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--main-title-color);
-    cursor: pointer;
     background: var(--button-color-portfolio);
     
 }
@@ -264,7 +275,6 @@ font-style: normal;
     color: var(--button-color-portfolio);
     background: var(--footer-item-color);
     border: 1px solid var(--footer-item-background);
-    cursor: pointer
 }
 .btn-portfolio:hover {
     background: var(--hover-color);
