@@ -6,6 +6,12 @@
     --hover-color:#404BBF;
     --footer-item-background:#E7E9FC; 
     --footer-item-color:#F4F4FD;
+    --card-set-gap: 24px;
+    --card-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    --padding-portfolio-title-subtitle: 0px 16px;
+    --about-feature-title-margine: 8px;
+    --btn-radius: 4px;
+    --header-margin: 40px;
 }
 h1,
 h2,
@@ -101,7 +107,7 @@ body {
     align-items: center;
 }
 .header-item {
-    margin: 40px;
+    margin: var(--header-margin);
 }
 .header-link {
     font-weight: 500;
@@ -126,7 +132,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--accent-color);
-    margin-right: 40px;
+    margin-right: var(--header-margin);
 }
 .header-mail:hover {
     color: var(--hover-color);
@@ -164,7 +170,7 @@ body {
 }
 .hero-btn {
     padding: 16px 32px;
-    border-radius: 4px;
+    border-radius: var(--btn-radius);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -187,7 +193,7 @@ body {
 }
 .about-list {
     display: flex;
-    gap: 24px;
+    gap: var(--card-set-gap);
 }
 .about-item {
     
@@ -197,7 +203,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--secondary-title-color);
-    margin-bottom: 8px;
+    margin-bottom: var(--about-feature-title-margine);
 }
 .about-item-list {
     font-size: 16px;
@@ -246,7 +252,7 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--secondary-title-color);
-    margin-bottom: 8px;    
+    margin-bottom: var(--about-feature-title-margine);    
 }
 .feture-subtitle {
     font-size: 16px;
@@ -258,8 +264,8 @@ body {
 .feature-card-content-item {
     padding: 32px 0;
     background: var(--main-title-color);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
+    box-shadow: var(--card-shadow);
+    border-radius: 0px 0px var(--btn-radius) var(--btn-radius);
 }
 
 /*-----------------Footer--------------------*/
@@ -288,11 +294,11 @@ body {
 .btn-list{
     margin-bottom: 72px;
     display: flex;
-    gap: 24px;
+    gap: var(--card-set-gap);
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-radius: 4px;
+    border-radius: var(--btn-radius);
 }
 .btn-item {
     
@@ -319,7 +325,7 @@ body {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
+    column-gap: var(--card-set-gap);
     row-gap: 48px;
 }
 .portfolio-item {
@@ -330,13 +336,13 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--secondary-title-color);
-    margin-bottom: 8px;
-    padding: 0px 16px;
+    margin-bottom: var(--about-feature-title-margine);
+    padding: var(--padding-portfolio-title-subtitle);
 }
 .portfolio-subtitle {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--accent-color); 
-    padding: 0px 16px;
+    padding: var(--padding-portfolio-title-subtitle);
 }
