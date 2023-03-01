@@ -31,10 +31,9 @@ body {
     color: var(--accent-color);
 }
 .container {
-    width: 1188px;
+    width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
-    outline: 1px solid red;
 }
 .list {
     list-style-type: none;
@@ -55,7 +54,9 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
+.section {
+    padding: 120px 0;
+}
 
 /*-----------------Header--------------------*/
 
@@ -151,16 +152,15 @@ body {
 .hero {
     background: var(--secondary-title-color);
     text-align: center;
-    padding: 188px;
+    padding: 188px 0;
 }
 .hero-title {
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
     letter-spacing: 0.02em;
     color: var(--main-title-color);
-    margin-bottom: 48px;
-    
+    width: 496px;
+    margin: 0 auto 48px;
 }
 .hero-btn {
     padding: 16px 32px;
@@ -183,7 +183,7 @@ body {
 /*-----------------About--------------------*/
 
 .about{
-    padding: 120px 0;
+    
 }
 .about-list {
     display: flex;
@@ -222,22 +222,23 @@ body {
 .services-item {
     display: flex;
     justify-content: space-between;
-    flex-basis: calc((100%-2*24)/3);
+    
+}
+.services-item-img {
+    flex-basis: calc((100% - 48px) / 3);
 }
 /*-----------------Feature--------------------*/
 
 .feature {
-    padding: 120px 0;
     background: var(--footer-item-color);
     
 }
 .feature-list {
     display: flex;
     justify-content: space-between;
-    flex-basis: calc((100%-3*24)/4);
 }
 .feature-item {
-
+    flex-basis: calc((100% - 72px) / 4);
 }
 .feature-title-2 {
     font-size: 20px;
@@ -267,12 +268,15 @@ body {
     background: var(--secondary-title-color);
     padding: 100px 0;
 }
+.footer-block {
+    width: 264px;
+}
 .footer-item {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--footer-item-background);
-    margin-top: 16px;   
+    margin-top: 16px;
 }
 
 /*-----------------Potfolio Section--------------------*/
@@ -317,9 +321,9 @@ body {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-    flex-basis: calc((100%-24*6)/9);
 }
 .portfolio-item {
+    flex-basis: calc((100% - 144px) / 9);
 }
 .portfolio-title {
     font-size: 20px;
