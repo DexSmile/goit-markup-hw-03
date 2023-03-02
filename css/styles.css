@@ -9,6 +9,7 @@
     --card-set-gap: 24px;
     --card-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     --btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    --portfolio-card: 0px 4px 4px rgba(0, 0, 0, 0.25);
     --margin-portfolio-title-subtitle: 16px;
     --about-feature-title-margine: 8px;
     --btn-radius: 4px;
@@ -262,6 +263,13 @@ body {
     letter-spacing: 0.02em;
     color: var(--accent-color);    
 }
+.feature-card-content-item {
+    border-radius: 0px 0px var(--btn-radius) var(--btn-radius);
+    box-shadow: var(--card-shadow);
+    padding: 32px 0;
+    background: var(--main-title-color);
+    border: none;
+}
 /*-----------------Footer--------------------*/
 
 .footer {
@@ -316,11 +324,7 @@ body {
     padding: 12px 24px;
     border-radius: var(--btn-radius);
 }
-.btn-portfolio:hover {
-    background: var(--hover-color);
-    color: var(--footer-item-color);
-}
-.btn-portfolio:focus {
+.btn-portfolio:hover,:focus {
     background: var(--hover-color);
     color: var(--footer-item-color);
 }
@@ -333,15 +337,17 @@ body {
 .portfolio-card-content-item {
     padding: 32px 0;
     background: var(--main-title-color);
-    box-shadow: var(--card-shadow);
-    border-radius: 0px 0px var(--btn-radius) var(--btn-radius);
-    border-top: none;
     border: 1px solid var(--footer-item-background);
+    border-top: none;
+}
+.portfolio-card-content-item:hover,:focus {
+    box-shadow: var(--portfolio-card);
 }
 .portfolio-item {
     flex-basis: calc((100% - 48px) / 3);
 }
 .portfolio-title {
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
