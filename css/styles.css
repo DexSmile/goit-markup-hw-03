@@ -278,7 +278,7 @@ body {
 /*-----------------Potfolio Section--------------------*/
 
 .portfolio {
-    padding: 96px 156px var(--section-pading);
+    padding: 96px 156px var(--section-pading) 156px;
 }
 .btn-list{
     margin-bottom: 72px;
