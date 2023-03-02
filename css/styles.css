@@ -340,11 +340,11 @@ body {
     border: 1px solid var(--footer-item-background);
     border-top: none;
 }
-.portfolio-card-content-item:hover,:focus {
-    box-shadow: var(--portfolio-card);
-}
 .portfolio-item {
     flex-basis: calc((100% - 48px) / 3);
+}
+.portfolio-item:hover,:focus {
+    box-shadow: var(--portfolio-card);
 }
 .portfolio-title {
     font-weight: 500;
